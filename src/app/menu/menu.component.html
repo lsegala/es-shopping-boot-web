@@ -1,0 +1,8 @@
+<div class="input-group" style="padding-top: 6px;">
+  <p-autoComplete [style]="{'width':'100%'}" [inputStyle]="{'width':'100%'}" [(ngModel)]="query" [suggestions]="sugestoes" (completeMethod)="sugerir($event)" (keyup.enter)="buscar()"></p-autoComplete>
+  <div class="input-group-btn">
+    <button class="btn btn-default" (click)="buscar()" routerLink="/">
+      <i class="glyphicon glyphicon-search"></i>
+    </button>
+  </div>
+</div>

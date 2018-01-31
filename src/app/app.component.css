@@ -1,0 +1,16 @@
+#voceQuisDizer {
+  display: inline;
+  list-style: none;
+}
+
+#voceQuisDizer li {
+  display: inline;
+}
+
+#voceQuisDizer li:after {
+  content: " ou ";
+}
+
+#voceQuisDizer li:last-child:after {
+  content: "";
+}

@@ -1,0 +1,7 @@
+<p-panel [style]="{'text-align': 'center'}">
+  <p-header [title]="titulo">{{titulo.substring(0, 20)}}...</p-header>
+  <a href="#" onclick="return false;" (click)="detalhe()">
+    <img [src]="src? src : '/assets/img/placeholder.svg'" [title]="descricao"/>
+    <div class="preco">Preço: <strong>R$ {{preco|number}}</strong></div>
+  </a>
+</p-panel>

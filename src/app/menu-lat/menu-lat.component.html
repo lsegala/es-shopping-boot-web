@@ -1,0 +1,2 @@
+<p-menu [model]="itens" *ngIf="!filtro"></p-menu>
+<div *ngIf="filtro">Filtro: {{filtro}} <a href="#" (click)="onFiltroExcluido()"><span class="fa fa-close"></span></a></div>

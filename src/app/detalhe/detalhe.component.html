@@ -1,0 +1,23 @@
+<p-breadcrumb [model]="breadcrumbs"></p-breadcrumb>
+<p-panel>
+  <p-header>
+    {{item.titulo}}
+    <button pButton type="button" label="Voltar" style="float: right" routerLink="/"></button>
+  </p-header>
+  <p *ngIf="imagens.length">
+    <p-galleria [images]="imagens"></p-galleria>
+  </p>
+  <p-accordion>
+    <p-accordionTab header="Preço" [selected]="true">
+      R$ {{item.preco|number}}
+    </p-accordionTab>
+    <p-accordionTab header="Características">
+      <div [innerHTML]="item.caracteristicas">
+      </div>
+    </p-accordionTab>
+    <p-accordionTab header="Descrição">
+      <div [innerHTML]="item.descricao">
+      </div>
+    </p-accordionTab>
+  </p-accordion>
+</p-panel>
